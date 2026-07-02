@@ -98,6 +98,4 @@ IDBI-Bank-Manual-Testing-Assignment/
 
 **Naveen Pandey**
 
-B.Tech – Computer Science & Engineering (AI & ML)
-
 Manual Testing | Software Testing | QA Enthusiast
