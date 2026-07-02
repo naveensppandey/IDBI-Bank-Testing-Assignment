@@ -1,101 +1,35 @@
-# IDBI Bank Manual Testing Assignment
+# IDBI Bank – Application Form QA Testing
 
-## Project Overview
+Manual QA testing project on the IDBI Bank online application / callback form (`apps.idbibank.in/apply-now-inc.asp`). Includes test scenarios, test cases, and defect reports for bugs found during exploratory testing.
 
-This repository contains a Manual Testing Assignment performed on the **IDBI Bank – Help Us Contact You** enquiry form. The objective of this project was to validate the application's functionality, identify defects, and document the testing process using industry-standard testing practices.
+## 📄 Contents
 
----
+- **`IDBI_Bank_QA_Assignment.docx`** – Full deliverable containing:
+  - **Test Scenarios** – 24 scenarios covering all form fields and behaviours
+  - **Test Cases** – written using Equivalence Partitioning, Boundary Value Analysis, and Error Guessing
+  - **Defect Reports** – detailed bug reports with steps to reproduce, expected vs. actual results, severity/priority, and screenshot evidence
 
-## Application Under Test
+## 🐞 Defects Found
 
-- **Application:** IDBI Bank Website
-- **Module:** Help Us Contact You Form
-- **Testing Type:** Manual Functional Testing
+| ID | Title | Severity | Status |
+|----|-------|----------|--------|
+| BUG-001 | Mobile Number field accepts special characters (comma and dot) | Medium | Bug Identified |
+| BUG-002 | Form refreshes instead of showing a validation message when Branch details are not selected | Medium | Open |
+| BUG-003 | Form refreshes and clears all entered data when Branch details are not selected | High | Open |
 
----
+Plus 3 additional defect descriptions (`DEF-A01`–`DEF-A03`) covering mandatory-field bypass on the Services Required list box, CAPTCHA validation not enforced, and no response on valid form submission.
 
-## Objectives
+## 🧪 Testing Details
 
-- Understand the application requirements.
-- Design and execute test scenarios and test cases.
-- Validate form fields and business rules.
-- Identify and report defects with proper documentation.
+- **Application under test:** IDBI Bank callback/application form
+- **Browser:** Google Chrome
+- **OS:** Windows 11
+- **Testing type:** Manual, exploratory + scripted functional testing
 
----
+## 📌 Purpose
 
-## Testing Process
+This repository documents a QA testing assignment demonstrating the full manual testing lifecycle — from identifying test scenarios and writing test cases, to logging and reporting defects with reproducible steps and evidence.
 
-1. Requirement Analysis
-2. Test Scenario Design
-3. Test Case Preparation
-4. Test Execution
-5. Defect Identification and Reporting
-6. Result Analysis and Conclusion
+## ⚠️ Disclaimer
 
----
-
-## Deliverables
-
-- ✅ 20 Test Scenarios
-- ✅ 5 Detailed Test Cases
-- ✅ 3 Defect Reports with Screenshots
-- ✅ Test Summary and Conclusion
-
----
-
-## Defects Identified
-
-| Bug ID | Description | Severity |
-|--------|-------------|----------|
-| BUG-001 | Services Required field validation missing | High |
-| BUG-002 | Incorrect CAPTCHA accepted | Critical |
-| BUG-003 | Submit button unresponsive after valid submission | Critical |
-
----
-
-## Files Included
-
-- **IDBI_Bank_Manual_Testing_Assignment.docx**
-- **IDBI_Bank_Manual_Testing_Assignment.pdf**
-
----
-
-## Tools & Environment
-
-- Google Chrome
-- Microsoft Word
-- PDF Document
-- Windows 10
-- Manual Functional Testing
-
----
-
-## Skills Demonstrated
-
-- Requirement Analysis
-- Test Scenario Design
-- Test Case Writing
-- Functional Testing
-- Defect Reporting
-- Validation Testing
-- Documentation
-
----
-
-## Repository Structure
-
-```
-IDBI-Bank-Manual-Testing-Assignment/
-│
-├── README.md
-├── IDBI_Bank_Manual_Testing_Assignment.docx
-└── IDBI_Bank_Manual_Testing_Assignment.pdf
-```
-
----
-
-## Author
-
-**Naveen Pandey**
-
-Manual Testing | Software Testing | QA Enthusiast
+This is an educational/assignment project. All testing was performed on publicly accessible form fields without submitting real personal data or attempting to exploit any vulnerability beyond standard input validation checks.
